@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevNovus - Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background-color: #FFD700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    padding-bottom: 30px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+header .signin-btn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+header {
+    background-color: #FFD700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .search-signin {
+    display: flex;
+    align-items: center;
+}
+
+header input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* Add space between search box and sign in button */
+}
+
+header .signin-btn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.hero-text .highlight {
+    color: #8BC34A;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #555;
+}
+
+.hero-text input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.hero-text .cta-btn {
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hero-text .popular-cities {
+    margin-top: 20px;
+    color: #777;
+}
+
+.hero-text .popular-cities span {
+    margin-right: 10px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+    align-items: center; /* Align items vertically */
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-images {
+    position: relative;
+    width: 400px; 
+    height: 300px; 
+    overflow: hidden;
+    margin-left: 20px; 
+}
+
+.hero-images img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    animation: cycle 15s infinite;
+}
+
+.hero-images img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.hero-images img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.hero-images img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+@keyframes cycle {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    33.33% {
+        opacity: 1;
+    }
+    53.33% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.services {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 24px;
+    color: #000;
+}
+
+.caterers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.caterer {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+}
+
+.caterer img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.caterer h3 {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.caterer p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #FFD700;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-nav a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    border-radius: 50%; /* Optional: to make the icons circular */
+}
+
+
+.contact-info {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodCaterers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">FoodCaterers</div>
+        <div class="search-signin">
+            <input type="text" placeholder="Enter the name of the Caterer you are looking for">
+            <button class="signin-btn">Sign In</button>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Premium <span class="highlight">quality</span> Food for your <span class="highlight">Special days & Festivities</span></h1>
+                <p>Welcome to FoodCaterers - your premier choice for exquisite, tailored catering services. From intimate gatherings to grand celebrations, we deliver exceptional cuisine and flawless service to make every event unforgettable. Let us cater your perfect occasion.</p>
+                <input type="text" placeholder="Enter your delivery location">
+                <button class="cta-btn">Get Started</button>
+                <div class="popular-cities">
+                    <span>Popular cities in India:</span>
+                    <span>Hyderabad</span>
+                    <span>Chennai</span>
+                    <span>Mumbai</span>
+                    <span>Bangalore</span>
+                    <span>Delhi</span>
+                    <span>Kolkata</span>
+                </div>
+            </div>
+            <div class="hero-images">
+                <img src="hero1.jpg" alt="Catering Image 1">
+                <img src="hero2.jpg" alt="Catering Image 2">
+                <img src="hero3.jpg" alt="Catering Image 3">
+            </div>
+        </section>
+        <section class="services">
+            <div class="section-header">
+                <h2>Nearby Caterers</h2>
+            </div>
+            <div class="caterers">
+                <div class="caterer">
+                    <img src="caterer1.jpeg" alt="Caterer 1">
+                    <h3>Ramachandra Parlour</h3>
+                    <p>South Indian</p>
+                    <p>Chennai</p>
+                    <p>Rating: 4.0</p>
+                </div>
+                <div class="caterer">
+                    <img src="caterer2.jpeg" alt="Caterer 2">
+                    <h3>Uma Parlour - Pure Vegetarian</h3>
+                    <p>South Indian</p>
+                    <p>Madurai</p>
+                    <p>Rating: 3.2</p>
+                </div>
+                <div class="caterer">
+                    <img src="caterer3.jpeg" alt="Caterer 3">
+                    <h3>A2B Catering</h3>
+                    <p>South Indian</p>
+                    <p>Chennai</p>
+                    <p>Rating: 4.7</p>
+                </div>
+                <div class="caterer">
+                    <img src="caterer4.jpeg" alt="Caterer 4">
+                    <h3>Geetham Veg Catering</h3>
+                    <p>South Indian</p>
+                    <p>Chennai</p>
+                    <p>Rating: 4.9</p>
+                </div>
+                <div class="caterer">
+                    <img src="caterer5.jpeg" alt="Caterer 5">
+                    <h3>Swap - Diet Meal Box</h3>
+                    <p>Continental</p>
+                    <p>Bangalore</p>
+                    <p>Rating: 4.5</p>
+                </div>
+                <div class="caterer">
+                    <img src="caterer6.jpeg" alt="Caterer 6">
+                    <h3>The Good Bowl - Traditional Bowls</h3>
+                    <p>North Indian</p>
+                    <p>Trichy</p>
+                    <p>Rating: 4.8</p>
+                </div>
+                <div class="caterer">
+                    <img src="caterer7.jpeg" alt="Caterer 7">
+                    <h3>ITC Grand Chola</h3>
+                    <p>Continental</p>
+                    <p>Chennai</p>
+                    <p>Rating: 4.5</p>
+                </div>
+                <div class="caterer">
+                    <img src="caterer8.jpeg" alt="Caterer 8">
+                    <h3>Anjappar Catering Ltd.</h3>
+                    <p>Chettinad</p>
+                    <p>Chennai</p>
+                    <p>Rating: 4.5</p>
+                </div>
+                <div class="caterer">
+                    <img src="caterer9.jpeg" alt="Caterer 8">
+                    <h3>Sri Lakshmi Caterers</h3>
+                    <p>Chettinad</p>
+                    <p>Chennai</p>
+                    <p>Rating: 4.5</p>
+                </div>
+                <div class="caterer">
+                    <img src="caterer10.jpeg" alt="Caterer 8">
+                    <h3>Sri Venus Catering Ltd.</h3>
+                    <p>Chettinad</p>
+                    <p>Chennai</p>
+                    <p>Rating: 4.5</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <div class="footer-logo">FoodCaterers</div>
+            <nav class="footer-nav">
+                <a href="#">About us</a>
+                <a href="#">Delivery</a>
+                <a href="#">Help & Support</a>
+                <a href="#">T&C</a>
+            </nav>
+        </div>
+        <div class="footer-right">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/yourpage" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/yourpage" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+                <a href="https://www.twitter.com/yourpage" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/yourpage" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn">
+                </a>
+            </div>
+            
+            <div class="contact-info">
+                <span>Contact: +91 1234567899</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
