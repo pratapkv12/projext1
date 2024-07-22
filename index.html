@@ -19,35 +19,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    padding-bottom: 30px;
 }
 
 header .logo {
     font-size: 24px;
     font-weight: bold;
-}
-
-header input[type="text"] {
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-header .signin-btn {
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-header {
-    background-color: #FFD700;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
 }
 
 header .search-signin {
@@ -72,16 +48,18 @@ header .signin-btn {
     cursor: pointer;
 }
 
-
 .hero {
     display: flex;
     justify-content: space-between;
     padding: 40px;
     background-color: #fff;
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap;
 }
 
 .hero-text {
     max-width: 600px;
+    margin-bottom: 20px;
 }
 
 .hero-text h1 {
@@ -126,21 +104,10 @@ header .signin-btn {
     margin-right: 10px;
 }
 
-.hero {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    background-color: #fff;
-    align-items: center; /* Align items vertically */
-}
-
-.hero-text {
-    max-width: 600px;
-}
-
 .hero-images {
     position: relative;
-    width: 400px; 
+    width: 100%;
+    max-width: 400px; 
     height: 300px; 
     overflow: hidden;
     margin-left: 20px; 
@@ -186,7 +153,6 @@ header .signin-btn {
         opacity: 0;
     }
 }
-
 
 .services {
     padding: 40px 20px;
@@ -244,6 +210,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -260,6 +227,8 @@ footer {
 .footer-right {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .social-icons a {
@@ -273,11 +242,55 @@ footer {
     border-radius: 50%; /* Optional: to make the icons circular */
 }
 
-
 .contact-info {
     margin-left: 20px;
     font-size: 14px;
 }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    
+    header .search-signin {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    header input[type="text"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header .signin-btn {
+        width: 100%;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-text, .hero-images {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+    }
+
+    .hero-images {
+        height: 200px;
+    }
+
+    .footer-right {
+        justify-content: center;
+    }
+
+    .contact-info {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
 
     </style>
 </head>
